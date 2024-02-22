@@ -1,8 +1,8 @@
 .btn{
-    background-color: rgb(255,102,0);
-    color: rgb(255,217,0);
-    font-size: 60px;
+    background-color: lightseagreen;
+    color: black;
+    font-size: 64px;
 }
 body{
-    background-color: black;
+    background-color: darkmagenta;
 }
