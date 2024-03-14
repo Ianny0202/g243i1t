@@ -12,19 +12,24 @@
     height: 400px;
 }
 #aba1{
-    background-color: rgb(76, 76, 180);
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 #aba2{
-    background-color: aquamarine;
+    background-color: rgb(255, 187, 0);
+    color:black;
 }
 #aba3{
-    background-color: cadetblue;
+    background-color: rgb(0, 0, 0);
+    color: white;
 }
 #aba4{
-    background-color: cornflowerblue;
+    background-color: rgb(255, 187, 0);
+    color: black;
 }
 #aba5{
-    background-color:rgb(130, 205, 255);
+    background-color:rgb(0, 0, 0);
+    color: white;
 }
 .conteudo{
     text-align: center;
