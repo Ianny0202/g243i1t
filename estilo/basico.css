@@ -16,7 +16,7 @@
     color: white;
 }
 #aba2{
-    background-color: rgb(255, 187, 0);
+    background-color: rgb(255, 0, 0);
     color:black;
 }
 #aba3{
@@ -24,7 +24,7 @@
     color: white;
 }
 #aba4{
-    background-color: rgb(255, 187, 0);
+    background-color: rgb(255, 0, 0);
     color: black;
 }
 #aba5{
@@ -63,5 +63,31 @@ body {
 }
 .tablet{
     font-size: 55px;
+}
+.btn {
+    margin-top:0;
+    width: 80%;
+    font-size: 16px;
+}
+.conteudo{
+    text-align:right;
+}
+}
+
+@media (min-width:1228px){
+.barra{
+    background-color:rgb(90, 189, 192);
+    height:120px;
+}
+.tablet{
+    display:none;
+}
+.desktop{
+    display:inline;
+    font-size:70px;
+    color:black;
+}
+.conteudo{
+    text-align: left;
 }
 }
