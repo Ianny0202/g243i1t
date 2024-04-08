@@ -34,11 +34,13 @@ let fim = 0;
 function contagem(){
     if(inicio != fim){
         document.getElementById("valor").innerHTML = inicio;
-        inicio++
+        if (inicio > fim) inicio--;
+        else inicio++
     }
 }
 function contar(){
     inicio = document.getElementById("inicio").value; 
-    fim = document.getElementById("fim").value; 
+    fim = document.getElementById("fim").value;
+    if(inicio > fim) inicio = Number(inicio) -1;
     contador = setInterval(contagem,1000);
 }
