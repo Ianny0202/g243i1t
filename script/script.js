@@ -42,5 +42,6 @@ function contar(){
     inicio = document.getElementById("inicio").value; 
     fim = document.getElementById("fim").value;
     if(inicio > fim) inicio = Number(inicio) -1;
+
     contador = setInterval(contagem,1000);
 }
