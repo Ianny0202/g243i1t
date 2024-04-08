@@ -28,3 +28,17 @@ function abrir_aba(num){
         document.getElementById("aba5").style.display = "block";
     }
 }
+let contador = null;
+let inicio = 0 ;
+let fim = 0;
+function contagem(){
+    if(inicio != fim){
+        document.getElementById("valor").innerHTML = inicio;
+        inicio++
+    }
+}
+function contar(){
+    inicio = document.getElementById("inicio").value; 
+    fim = document.getElementById("fim").value; 
+    contador = setInterval(contagem,1000);
+}
