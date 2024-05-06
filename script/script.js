@@ -1,47 +1,47 @@
-function abrir_aba(num){
-    for(let i = 1; i <= 5; i++){
-        let id_btn = "btn"+i;
-        let id_aba = "aba"+i;
-        document.getElementById(id_btn).disabled = false;
-        document.getElementById(id_aba).style.display = "nome";
+const Fila = (locasaida) =>{
+ let locasaida = locasaida;
+ let dados = [];
+ const tamanho = () => dados .length;
+ const estaVazia = () => dados .length < 1
+ const enfileirar = vLOR => {
+    dados.push(valor);
+    imprimir();
+ }
+ const desenfileirar = () => {
+  dados.splice(0,1);
+  imprimir();
+ } 
+ const imprimir = () => {
+    console.log(dados);
+    dado_saida = "";
+    for (let i = 0; i < tamanho(); i++){
+        dado_saida += dados[i].id + "("+dados[i].itens+") ";
+    }
+    document.getElementById(tocaSaida).innerHTML = dados;
+ }
+ return {
+    enfileirar, desenfileirar
+ }
+}
+const f1 = Fila("saidaFilaGeneral");
+
+const Cliente = (_id,_itens) =>{
+    return {
+        id:_id,
+        itens: _itens
+    }
+}
+
+const chamarCx1 = () => {
+
+}
+
+const gerarItens = () => Math.floor(Math.random() + (15 - 3) + 2);
+const tamanhoInicialFila = 15;
+(function(){
+    for(let i = 1; i <= tamanhoInicialFila; i++){
+        f1.enfileirar(Cliente("P"+i.gerarItens()));
 
     }
 
-    if(num == "1"){
-     document.getElementById("btn1").disabled = true;
-     document.getElementById("aba1").style.display = "block";
-    }
-    if(num == "2"){
-        document.getElementById("btn2").disabled = true;
-        document.getElementById("aba2").style.display = "block";
-    }
-    if(num == "3"){
-        document.getElementById("btn3").disabled = true;
-        document.getElementById("aba3").style.display = "block";
-    }
-    if(num == "4"){
-        document.getElementById("btn4").disabled = true;
-        document.getElementById("aba4").style.display = "block";
-    }
-    if(num == "5"){
-        document.getElementById("btn5").disabled = true;
-        document.getElementById("aba5").style.display = "block";
-    }
-}
-let contador = null;
-let inicio = 0 ;
-let fim = 0;
-function contagem(){
-    if(inicio != fim){
-        document.getElementById("valor").innerHTML = inicio;
-        if (inicio > fim) inicio--;
-        else inicio++
-    }
-}
-function contar(){
-    inicio = document.getElementById("inicio").value; 
-    fim = document.getElementById("fim").value;
-    if(inicio > fim) inicio = Number(inicio) -1;
-
-    contador = setInterval(contagem,1000);
-}
+})();
